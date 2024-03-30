@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="astyle.css">
+    <title>Booky</title>
+    <style>
+        #grid {
+            background-color: aqua;
+            display: grid;
+            column-gap: 20px;
+            row-gap: 10px;
+            grid-template-columns: 200px 200px auto;
+        }
+
+        .grid-item{
+            background-color: lightcyan;
+            font-size: 20px;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #container {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+        #container > div {
+                border: 3px solid;
+                font-size: 20px;
+                margin: 20px;
+                padding: 20px;
+                width: 200px;
+            }
+
+    </style>
+</head>
+<body>
+    <header id="siteTitle">
+        <img src="../images/logo.png" alt="Booky logo">
+    </header>
+    <nav id="container" class="menu">
+        <div class="grid-item">
+            <li><a href="#">Home</a></li>
+        </div>
+        <div>
+            <li><a href="bestsellers.html">Bestsellers</a></li>
+        </div>
+        <div>
+            <li><a href="kids.html">Kids</a></li>
+        </div>
+        
+        <li><a href="newreleases.html">New Releases</a></li>
+        <li><a href="toprated.html">Top Rated</a></li>
+        <form action="#" class="searchbar">
+            <input type="text" id="search">
+            <input type="submit" value="Search">
+        </form>
+    </nav>
+
+    <div id="grid">
+
+        <div class="grid-item">Home</div>
+        <div class="grid-item">Bestsellers</div>
+        <div class="grid-item">Kids</div>
+        <div class="grid-item">New Releases</div>
+
+    </div>
+
+    <div id="container">
+
+        <div> 1. Demo for flexbox</div>
+        <div> 2. This is some sample text to Demo for flexbox</div>
+        <div> 3. Demo for flexbox</div>
+        <div> 4. Demo for flexbox</div>
+        <div> 5. Demo for flexbox</div>
+        <div> 6. Demo for flexbox</div>
+
+    </div>
+
+    <main>
+        <h2>Main</h2>
+        <p>This is the main</p>
+    </main>
+    <footer>
+        <ul class="footer" id="footermenu">
+            <li id="shipreturn"><a href="shippingandreturns.html">Shipping and Returns</a></li>
+            <li id="about"><a href="#">About Us</a></li>
+        </ul>
+        <p class="footer">&copy;2024, Booky.net</p>
+    </footer>
+</body>
+</html>

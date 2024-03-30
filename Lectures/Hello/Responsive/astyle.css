@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#siteTitle {
+    color:rgb(40, 130, 255);
+    text-align:center;
+}
+
+.searchbar {
+    grid-column:searchbar;
+    margin:auto;
+    width:100%;
+}
+
+.menu {
+    /*
+    display:grid;
+    gap:0.5rem;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr auto;
+    justify-items:stretch;
+    */
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: 200px 200px auto;
+}
+
+.menu li{
+    list-style-type:none;
+    width:100%;
+}
+
+.menu a{
+    color:black;
+    text-align:center;
+    text-decoration: none;
+    padding: 0.7rem;
+    
+    width:100%;
+}
+
+.menu a:hover{
+    background-color:rgb(40, 130, 255);
+    border:1px solid rgb(40, 130, 255);
+    color:white;
+}
+
+footer {
+    background-color:rgb(40, 130, 255);
+    padding:0.7rem;
+}
+
+.footer {
+    color:white;
+    list-style-type:none;
+}
+
+.footer a {
+    text-decoration:none;
+    color:white;
+}
+
+#footermenu {
+    display:grid;
+    padding:0;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas:"shipping about";
+}
+
+#shipreturn {
+    grid-area:shipping;
+}
+
+#about {
+    grid-area:about;
+}
